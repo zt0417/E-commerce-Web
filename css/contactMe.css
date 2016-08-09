@@ -1,0 +1,14 @@
+#canvas{
+    cursor:crosshair;
+    overflow:hidden;
+}
+
+body{
+  overflow:hidden;
+}
+
+.contact {
+	position: absolute;
+	top:0px;
+	right:100px;
+}

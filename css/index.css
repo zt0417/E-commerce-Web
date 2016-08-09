@@ -1,0 +1,77 @@
+
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  color: #fff;
+  background: url(../images/background-index.png) no-repeat;
+  transition: background-position .5s ease-out;
+  	background-attachment:fixed;
+	background-size:100%;
+	background-size: cover;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Rock Salt', cursive;
+  text-shadow: 2px 2px 2px #000;
+}
+
+.nGyroParallax1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: .5s ease-out;
+}
+
+
+#chouchin-1-1 {
+  margin: -160px 0 0 -460px;
+}
+#chouchin-1-2 {
+  margin: -110px 0 0 280px;
+}
+#chouchin-1-1 img,
+#chouchin-1-2 img {
+  transform: translate3d(0,0,0);
+  transition: .5s;
+}
+
+
+#ink1-1 {
+  margin: -186px 0 0 -400px;
+}
+#ink1-2 {
+  margin: -206px 0 0 -40px;
+}
+
+
+#aori {
+  margin: -241px 0 0 -270px;
+}
+#hotaru {
+  margin: -237px 0 0 40px;
+}
+#aori img,
+#hotaru img {
+  transform: translate3d(0,0,0);
+  -webkit-filter: drop-shadow(4px 0 3px black);
+  -ms-filter: drop-shadow(4px 0 3px black);
+  filter: drop-shadow(4px 0 3px black);
+  transition: .5s;
+}
+
+
+#console {
+  display: none;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  color: #fff;
+  font-size: 32px;
+  background: rgba(0,0,0,.6);
+  box-sizing: border-box;
+}
+

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Tong Zhang</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/index.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+	  <div class="container-fluid">
+		<div class="navbar-header">
+		  <a class="navbar-brand" href="#">Tong</a>
+		</div>
+		<ul class="nav navbar-nav">
+		  <li class="active"><a href="#">Home</a></li>
+		  <li><a href="myStore.html">My Store</a></li>
+		  <li><a href="myPhoto.html">My Photo</a></li> 
+		  <li><a href="contactMe.html">Contact</a></li> 
+		</ul>
+	  </div>
+	</nav>
+	<div class="htmleaf-container">
+
+	<div id="ink1-1" class="nGyroParallax1">
+	  <img src="images/fes_ink1-1.png" alt="" width="445" height="373">
+	</div>
+	<div id="ink1-2" class="nGyroParallax1">
+	  <img src="images/fes_ink1-2.png" alt="" width="379" height="412">
+	</div>
+
+	<div id="chouchin-1-1" class="nGyroParallax1">
+	  <img src="images/fes_chouchin.png" alt="" width="151" height="267">
+	</div>
+	<div id="chouchin-1-2" class="nGyroParallax1">
+	  <img src="images/fes_chouchin.png" alt="" width="151" height="267">
+	</div>
+
+	<div id="aori" class="nGyroParallax1">
+	  <img src="images/sc_aori.png" alt="" width="260" height="482">
+	</div>
+	<div id="hotaru" class="nGyroParallax1">
+	  <img src="images/sc_hotaru.png" alt="" width="202" height="474">
+	</div>
+
+	<div id="console"></div>
+
+
+
+
+	<!-- footer -->
+	<div>
+		<div class="navbar navbar-default navbar-fixed-bottom">
+			<div class="contrainer">
+				<p class="navbar-text">Site Build By Tong</p>
+			</div>
+		</div>
+	</div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="http://libs.useso.com/js/jquery/2.1.1/jquery.min.js" type="text/javascript"></script>
+	<script src="js/jquery.easing.min.js"></script>
+	<script src="dist/jquery.nGyroParallax.min.sourcemap.js"></script>
+	<script>
+	$(function(){
+	  
+	  $(window).load(function(){
+	    $('#chouchin-1-1').nGyroParallax({
+	      magnification: .004
+	    });
+	    $('#chouchin-1-2').nGyroParallax({
+	      magnification: .004
+	    });
+	    $('#aori').nGyroParallax();
+	    $('#hotaru').nGyroParallax();
+	  });
+	  
+	});
+	</script>
+  </body>
+</html>

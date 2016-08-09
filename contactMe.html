@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Tong Zhang</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/contactMe.css" rel="stylesheet">	
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+body,
+html {
+  background-color: white;
+  color: #000000;
+}
+.moon {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.container {
+  height: 300px;
+  width: 300px;
+
+  margin:50px;
+}
+.person {
+  position: absolute;
+  height: 75px;
+  width: 0;
+  color: #fff;
+  left: 150px;
+  top: 159px;
+  transform-origin: 50% 50% 0px;
+  -webkit-animation: sprint 2s infinite ease-in;
+}
+.person .head:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: -6px;
+  height: 2.7px;
+  width: 42px;
+  border-radius: 20%;
+  border: 4px solid black;
+  background-color: #000000;
+  transform-origin: 50% 100% 0px;
+  z-index: 90;
+}
+.person .head {
+  position: absolute;
+  top: -30px;
+  left: -6px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 4px solid black;
+  transform-origin: 50% 100% 0px;
+  z-index: 90;
+  -webkit-animation: bob 2s infinite alternate;
+}
+.person .head:after {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: 9px;
+  height: 12px;
+  width: 15px;
+  border-radius: 30%;
+  border: 4px solid black;
+  background-color: #000000;
+  z-index: 90;
+}
+.person .torso {
+  position: absolute;
+  height: 60px;
+  width: 0;
+  border-left: 2px solid black;
+  left: 0px;
+  top: 15px;
+  z-index: 90;
+}
+.person .part {
+  position: absolute;
+  left: 0;
+  top: 75px;
+  z-index: 90;
+}
+.person .part.arm {
+  position: absolute;
+  border-left: 3px solid black;
+  border-bottom: 3px solid black;
+  height: 45px;
+  width: 39px;
+  top: 15px;
+  right: 300px;
+  transform-origin: 0% 0% 0px;
+  -webkit-animation: pump 1s infinite ease-in-out;
+}
+.person .part.arm.one {
+  transform: rotate3d(0, 0, 1, -90deg);
+}
+.person .part.arm.two {
+  transform: rotate3d(0, 0, 1, -90deg);
+  animation-delay: .5s;
+}
+.person .part.leg {
+  height: 57px;
+  width: 60px;
+  border-right: 3px solid black;
+  border-top: 3px solid black;
+  -webkit-animation: run 1s infinite ease-in;
+  transform-origin: 0% 0% 0px;
+}
+.person .part.leg.one {
+  transform: rotate3d(0, 0, 1, 90deg);
+}
+.person .part.leg.two {
+  transform: rotate3d(0, 0, 1, 80deg);
+  animation-delay: .5s;
+}
+.person .part .foot {
+  position: absolute;
+  top: 90px;
+  left: 0;
+  width: 3px;
+  height: 3px;
+  background-color: #000000;
+  z-index: 900;
+  border: 3px solid red;
+}
+@keyframes run {
+  0% {
+    transform: rotate3d(0, 0, 1, -5deg);
+  }
+  50% {
+    transform: rotate3d(0, 0, 1, 150deg);
+  }
+  100% {
+    transform: rotate3d(0, 0, 1, -5deg);
+  }
+}
+@keyframes bob {
+  0% {
+    transform: rotate3d(0, 0, 1, 5deg);
+  }
+  25% {
+    transform: rotate3d(0, 0, 1, -30deg) skew(15deg, 0deg);
+  }
+  50% {
+    transform: rotate3d(0, 0, 1, 5deg);
+  }
+  75% {
+    transform: rotate3d(0, 0, 1, -30deg) skew(15deg, 0deg);
+  }
+  100% {
+    transform: rotate3d(0, 0, 1, 20deg) skew(-15deg, 0deg);
+  }
+}
+@keyframes pump {
+  0% {
+    transform: rotate3d(0, 0, 1, 80deg);
+  }
+  50% {
+    transform: rotate3d(0, 0, 1, -70deg);
+  }
+  100% {
+    transform: rotate3d(0, 0, 1, 80deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate3d(0, 0, 1, -180deg);
+  }
+  25% {
+    transform: rotate3d(0, 0, 1, -100deg);
+  }
+  75% {
+    transform: rotate3d(0, 0, 1, 100deg);
+  }
+  100% {
+    transform: rotate3d(0, 0, 1, 180deg);
+  }
+}
+@keyframes sprint {
+  0% {
+    transform-origin: 50% 50% 0px;
+    transform: translate(-500px, 0px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+    transform-origin: 50% 50% 0px;
+    transform: translate(500px, 0px);
+  }
+}
+
+</style>
+
+    <script src="js/prefixfree.min.js"></script>
+
+
+
+  </head>
+  <body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+	  <div class="container-fluid">
+		<div class="navbar-header">
+		  <a class="navbar-brand" href="index.html">Tong</a>
+		</div>
+		<ul class="nav navbar-nav">
+		  <li><a href="index.html">Home</a></li>
+		  <li><a href="myStore.html">My Store</a></li>
+		  <li><a href="myPhoto.html">My Photo</a></li> 
+		  <li class="active"><a href="#">Contact</a></li> 
+		</ul>
+	  </div>
+	</nav>
+
+	<div style="text-align:center;clear:both;">
+<script src="/gg_bd_ad_720x90.js" type="text/javascript"></script>
+<script src="/follow.js" type="text/javascript"></script>
+</div>
+  <div class='moon'></div>
+<div class='container'>
+  <div class='person'>
+    <div class='head'></div>
+    <div class='part arm one'></div>
+    <div class='part arm two'></div>
+    <div class='torso'></div>
+    <div class='part leg one'></div>
+    <div class='part foot one'></div>
+    <div class='part leg two'></div>
+    <div class='part foot two'></div>
+  </div>
+</div>
+<div class="container contact">
+	<h3>Contact<h3>
+	<p>Name: Tong Zhang<br><br>Phone: 226-750-8455<br><br>Email: <a>zt04170@gmail.com</a><br><br> Address: 425 Wilson Ave, Kitchener, ON N2C 2R8</p>
+</div>
+
+	<!-- footer -->
+	<div>
+		<div class="navbar navbar-default navbar-fixed-bottom">
+			<div class="contrainer">
+				<p class="navbar-text">Site Build By Tong</p>
+			</div>
+		</div>
+	</div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="http://libs.useso.com/js/jquery/2.1.1/jquery.min.js" type="text/javascript"></script>
+	<script src="js/jquery.easing.min.js"></script>
+	<script src="dist/jquery.nGyroParallax.min.sourcemap.js"></script>
+  </body>
+</html>

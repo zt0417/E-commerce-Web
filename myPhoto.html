@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Tong Zhang</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-grid.min.css" rel="stylesheet">
+	<link href="css/myPhoto.css" rel="stylesheet">
+	<link href="css/zoomify.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+
+  <!-- Start navigation bar -->
+  <body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+	  <div class="container-fluid">
+		<div class="navbar-header">
+		  <a class="navbar-brand" href="index.html">Tong</a>
+		</div>
+		<ul class="nav navbar-nav">
+		  <li><a href="index.html">Home</a></li>
+		  <li><a href="myStore.html">My Store</a></li>
+		  <li class="active"><a href="myPhoto.html">My Photo</a></li> 
+		  <li><a href="contactMe.html">Contact</a></li> 
+		</ul>
+	  </div>
+	</nav>
+	<!-- End navigation bar -->
+
+  
+	<!-- Start content -->
+	<div class="container">		
+		<div class="examples">	
+		<div class="row">
+			<div class="example  col-md-12 col-xs-12 ">
+				<p><img src="images/1.jpg" class="img-rounded" alt=""></p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="example  col-xs-6 col-md-6">
+				<p><img src="images/2.jpg" class="img-rounded" alt=""></p>
+			</div>
+			<div class="example col-xs-6 col-md-6">
+				<p><img src="images/3.jpg" class="img-rounded" alt=""></p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="example col-xs-3 col-md-3">
+				<p><img src="images/4.jpg" class="img-rounded" alt=""></p>
+			</div>
+			<div class="example col-xs-3 col-md-3">
+				<p><img src="images/5.jpg" class="img-rounded" alt=""></p>
+			</div>
+			<div class="example col-xs-3 col-md-3">
+				<p><img src="images/6.jpg" class="img-rounded" alt=""></p>
+			</div>
+			<div class="example col-xs-3 col-md-3">
+				<p><img src="images/7.jpg" class="img-rounded" alt=""></p>
+			</div>
+		</div>
+	</div>	
+	<div class="footBlank"></div>
+</div>
+
+	<!-- End content -->
+
+	<!-- footer -->
+	<div>
+		<div class="navbar navbar-default navbar-fixed-bottom">
+			<div class="contrainer">
+				<p class="navbar-text">Site Build By Tong</p>
+			</div>
+		</div>
+	</div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/zoomify.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+		$('.example img').zoomify();
+	</script>
+  </body>
+</html>
